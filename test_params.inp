@@ -1,0 +1,41 @@
+&io
+  do_io_first_coarse = .TRUE.
+  do_io_fine = .TRUE.
+  do_io_cor_coarse = .TRUE.
+  be_verbose = .TRUE.
+/
+
+&sim_time
+  Tstart = 0.0
+  Tend = 3.2d-06
+/
+
+&num_steps
+  N_fine = 0.8d01
+  N_coarse = 2.0d00
+/
+
+&num_iter
+  Niter = 8
+/
+
+&num_proc
+  Nprocs_for_seq = 8
+/
+
+&flag
+  just_para_flag = 0
+  change_env_flag = 0
+/
+
+&env_data
+  Temp1 = 1.845804955E+02
+  Temp2 = 7.900100E+03
+  rho1 = 2.000000d06
+  rho2 = 0.26139318d08
+  phi_ini = 0.0
+/
+
+&visualization
+  match_y_axis_range = .TRUE.
+/
